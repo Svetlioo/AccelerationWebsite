@@ -1,0 +1,108 @@
+.track {
+  width: 800px;
+  height: 100px;
+  background-color: #999;
+  position: relative;
+  margin: 50px auto;
+  /* overflow-x: hidden; */
+  background-image: url(pictures/race-track.jpg);
+  background-size: 800px;
+  height: 200px;
+}
+
+.car {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: -50px;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+.car1 {
+  display: block;
+  top: -20px;
+  /* animation-name: race1; */
+}
+
+.car2 {
+  display: block;
+  top: 80px;
+  /* animation-name: race2; */
+}
+
+@keyframes race1 {
+  0% {
+    left: -50px;
+  }
+  100% {
+    left: 85%;
+  }
+}
+
+@keyframes race2 {
+  0% {
+    left: -50px;
+  }
+  100% {
+    left: 85%;
+  }
+}
+
+.input-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: whitesmoke;
+  font-size: 18px;
+}
+
+input[type="number"] {
+  width: auto;
+  border-radius: 7px;
+  border-color: gray;
+  align-items: center;
+  padding: 5px;
+}
+
+#result {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 32px;
+  color: whitesmoke;
+  font-weight: bolder;
+  text-decoration: solid;
+}
+
+#submit-button {
+  font-size: 16px;
+  padding: 5px;
+  color: white;
+  background-color: gray;
+  border-radius: 5px;
+}
+
+#reset-button {
+  font-size: 15px;
+  padding: 5px;
+  color: white;
+  background-color: indianred;
+  border-radius: 5px;
+}
+/* body {
+  background-image: url(car-background.jpeg);
+} */
+
+html {
+  background: url(pictures/car-background.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #081b29;
+}
