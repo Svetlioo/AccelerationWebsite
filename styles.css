@@ -1,39 +1,43 @@
+html {
+  font-size: 72.5%;
+  box-sizing: border-box;
+}
 .track {
-  width: 800px;
-  height: 100px;
+  width: 80rem;
+  height: 10rem;
   background-color: #999;
   position: relative;
-  margin: 50px auto;
+  margin: 5rem auto;
   /* overflow-x: hidden; */
   background-image: url(pictures/race-track.jpg);
-  background-size: 800px;
-  height: 200px;
+  background-size: 80rem;
+  height: 20rem;
 }
 
 .car {
-  width: 150px;
-  height: 150px;
+  width: 15rem;
+  height: 15rem;
   position: absolute;
-  left: -50px;
+  left: -5rem;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 
 .car1 {
   display: block;
-  top: -20px;
+  top: -2rem;
   /* animation-name: race1; */
 }
 
 .car2 {
   display: block;
-  top: 80px;
+  top: 8rem;
   /* animation-name: race2; */
 }
 
 @keyframes race1 {
   0% {
-    left: -50px;
+    left: -5rem;
   }
   100% {
     left: 85%;
@@ -42,7 +46,7 @@
 
 @keyframes race2 {
   0% {
-    left: -50px;
+    left: -5rem;
   }
   100% {
     left: 85%;
@@ -55,45 +59,53 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 1rem;
   text-transform: capitalize;
   font-weight: bold;
   color: whitesmoke;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 input[type="number"] {
   width: auto;
-  border-radius: 7px;
+  border-radius: 0.7rem;
   border-color: gray;
   align-items: center;
-  padding: 5px;
+  padding: 0.5rem;
 }
 
 #result {
   text-align: center;
-  margin-top: 50px;
-  font-size: 32px;
+  margin-top: 5rem;
+  font-size: 3.2rem;
   color: whitesmoke;
   font-weight: bolder;
   text-decoration: solid;
 }
 
 #submit-button {
-  font-size: 16px;
-  padding: 5px;
+  font-size: 1.6rem;
+  padding: 0.5rem;
   color: white;
   background-color: gray;
-  border-radius: 5px;
+  border-radius: 0.5rem;
 }
 
 #reset-button {
-  font-size: 15px;
-  padding: 5px;
+  font-size: 1.5rem;
+  padding: 0.5rem;
   color: white;
   background-color: indianred;
-  border-radius: 5px;
+  border-radius: 0.5rem;
 }
+
+/* #mode-button {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(25, 150, 150);
+  border-radius: 0.5rem;
+} */
 /* body {
   background-image: url(car-background.jpeg);
 } */
@@ -105,4 +117,27 @@ html {
   -o-background-size: cover;
   background-size: cover;
   background-color: #081b29;
+}
+.car-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.dropdown {
+  min-width: 15rem;
+  position: relative;
+  margin: 2rem;
+}
+
+.select {
+  background: #081b29;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px red solid;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
 }

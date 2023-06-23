@@ -39,7 +39,7 @@ const startRace = function () {
   result.textContent = "Race started!";
 };
 
-// Start of code 
+// Start of code
 submitButton.addEventListener("click", startRace);
 
 car1.addEventListener("animationend", function () {
