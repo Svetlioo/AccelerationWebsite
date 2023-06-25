@@ -136,8 +136,9 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px red solid;
+  border: 2px #081b29 solid;
   border-radius: 0.5rem;
   padding: 0.5rem;
   cursor: pointer;
+  transition: background 0.3s;
 }
