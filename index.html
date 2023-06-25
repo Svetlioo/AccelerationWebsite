@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Car 1/4 mile</title>
+    <title>Car Acceleration</title>
     <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
@@ -12,20 +12,24 @@
       <img class="car car1" src="pictures/car1.png" alt="Car 1" />
       <img class="car car2" src="pictures/car2.png" alt="Car 2" />
     </div>
-
+    <button id="mode-button">0 - 100 km/h</button>
     <div class="input-container">
-      <label for="time-input-car1">Car 1 1/4 mile (in seconds):</label>
+      <label for="time-input-car1" id="car-1-label"
+        >Car 1 0-100 km/h (in seconds):</label
+      >
       <input
         type="number"
-        placeholder="0"
+        placeholder="Acceleration time"
         id="time-input-car1"
         min="0"
         step="1"
       />
-      <label for="time-input-car2">Car 2 1/4 mile (in seconds):</label>
+      <label for="time-input-car2" id="car-2-label"
+        >Car 2 0-100 km/h (in seconds):</label
+      >
       <input
         type="number"
-        placeholder="0"
+        placeholder="Acceleration time"
         id="time-input-car2"
         min="0"
         step="1"
@@ -33,36 +37,37 @@
 
       <button id="submit-button">Submit</button>
       <button id="reset-button">Reset</button>
+
       <div class="car-selector">
         <div>
-          <div class="dropdown">
+          <div class="dropdown dropdown1">
             <div class="select">
-              <span class="selected" id="mode-button">Car 1</span>
+              <span class="selected">Car 1</span>
               <div class="caret"></div>
             </div>
+            <ul class="menu">
+              <li>Audi RS7</li>
+              <li>Mercedes C63</li>
+              <li>VW GOLF IV</li>
+              <li class="active">BMW 335 XI</li>
+              <li>TESLA 1020HP</li>
+            </ul>
           </div>
-          <ul class="menu">
-            <li>Audi</li>
-            <li>Mercedes</li>
-            <li>VW</li>
-            <li class="active">BMW</li>
-            <li>Alfa romeo</li>
-          </ul>
         </div>
         <div>
-          <div class="dropdown">
+          <div class="dropdown dropdown2">
             <div class="select">
-              <span class="selected" id="mode-button">Car 2</span>
+              <span class="selected">Car 2</span>
               <div class="caret"></div>
             </div>
+            <ul class="menu">
+              <li>Lambo SVJ</li>
+              <li>Bugatti Chiron</li>
+              <li>Toyota Prius</li>
+              <li class="active">Koenigsegg Jesko</li>
+              <li>Nissan GT-R</li>
+            </ul>
           </div>
-          <ul class="menu">
-            <li>Audi</li>
-            <li>Mercedes</li>
-            <li>VW</li>
-            <li class="active">BMW</li>
-            <li>Alfa romeo</li>
-          </ul>
         </div>
       </div>
     </div>
